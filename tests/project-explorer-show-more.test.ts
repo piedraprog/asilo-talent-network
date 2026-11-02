@@ -16,7 +16,7 @@ it("shows ten first, reveals ten more per press, hides the button at the end and
     <div id="project-results">${cards}</div><p id="project-count"></p>
     <div id="empty-results"><h2></h2><p></p></div>
     <div class="show-more"><p data-show-status></p><a data-show-more></a></div>`;
-  await import("../src/scripts/project-explorer");
+  await import("../src/app/pages/public/projects/scripts/project-explorer");
   const visible = () => [...document.querySelectorAll<HTMLElement>("[data-project-index]")].filter(card => !card.hidden).length;
   const more = document.querySelector<HTMLAnchorElement>("[data-show-more]")!;
   const box = document.querySelector<HTMLElement>(".show-more")!;

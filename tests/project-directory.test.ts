@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import { describe, expect, it } from "vitest";
-import ProjectDirectory from "../src/components/ProjectDirectory.astro";
+import ProjectDirectory from "../src/app/pages/public/projects/components/ProjectDirectory.astro";
 import type { Project } from "../src/app/core/models/projects";
 
 describe("ProjectDirectory", () => {
@@ -26,13 +26,13 @@ describe("ProjectDirectory", () => {
     expect(html).toContain('id="project-directory-list"');
     expect((html.match(/target="_blank" rel="noopener noreferrer"/g) ?? []).length).toBe(20);
     expect((html.match(/icons\/pixelarticons\/box\.svg/g) ?? []).length).toBe(20);
-    expect(readFileSync(new URL("../src/components/ProjectDirectory.astro", import.meta.url), "utf8"))
+    expect(readFileSync(new URL("../src/app/pages/public/projects/components/ProjectDirectory.astro", import.meta.url), "utf8"))
       .toContain("gsap.timeline");
   });
 
   it("shows a complete success state with actions instead of a buried status message", () => {
     const component = readFileSync(
-      new URL("../src/components/ProjectDirectory.astro", import.meta.url),
+      new URL("../src/app/pages/public/projects/components/ProjectDirectory.astro", import.meta.url),
       "utf8",
     );
 
@@ -54,7 +54,7 @@ describe("ProjectDirectory", () => {
 
   it("uses explicit close controls without backdrop dismissal", () => {
     const component = readFileSync(
-      new URL("../src/components/ProjectDirectory.astro", import.meta.url),
+      new URL("../src/app/pages/public/projects/components/ProjectDirectory.astro", import.meta.url),
       "utf8",
     );
 
@@ -79,7 +79,7 @@ describe("ProjectDirectory", () => {
 
   it("refreshes the directory in the background without reloading the page", () => {
     const component = readFileSync(
-      new URL("../src/components/ProjectDirectory.astro", import.meta.url),
+      new URL("../src/app/pages/public/projects/components/ProjectDirectory.astro", import.meta.url),
       "utf8",
     );
 

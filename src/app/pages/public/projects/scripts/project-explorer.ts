@@ -1,6 +1,6 @@
-import { startProjectRefresh } from "../app/core/project-refresh";
-import { DEFAULT_PROJECT_ORDER, filterProjects, limitProjects, normalizeVisibleLimit, parseProjectOrder, PROJECTS_PAGE_SIZE } from "../app/core/project-search";
-import { track } from "../app/shared/scripts/analytics";
+import { startProjectRefresh } from "../../../../core/project-refresh";
+import { DEFAULT_PROJECT_ORDER, filterProjects, limitProjects, normalizeVisibleLimit, parseProjectOrder, PROJECTS_PAGE_SIZE } from "../../../../core/project-search";
+import { track } from "../../../../shared/scripts/analytics";
 
 const form = document.querySelector<HTMLFormElement>("#project-filters")!;
 const search = document.querySelector<HTMLInputElement>("#project-query")!;

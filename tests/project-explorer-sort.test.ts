@@ -24,7 +24,7 @@ it("reorders results from the order tabs and keeps the default order out of the 
     <div id="empty-results"><h2></h2><p></p></div>
     <div class="show-more" hidden><p data-show-status></p><a data-show-more></a></div>`;
 
-  await import("../src/scripts/project-explorer");
+  await import("../src/app/pages/public/projects/scripts/project-explorer");
   const titles = () => [...document.querySelectorAll<HTMLElement>("[data-project-index]")].map(card => card.dataset.title);
   const choose = async (value: string) => {
     const input = document.querySelector<HTMLInputElement>(`[name="orden"][value="${value}"]`)!;

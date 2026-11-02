@@ -25,7 +25,7 @@ it("refreshes cards and categories, preserves search, and retains results on fai
     <div id="project-results"><a href="https://example.com" data-project-index="0" data-title="Nuevo" data-tags='["AI"]'>Nuevo</a></div>
     <div class="category-list"><label data-category-name="AI"><input name="categoria" type="checkbox" value="AI"></label><p data-category-empty></p></div>`));
   vi.stubGlobal("fetch", fetcher);
-  await import("../src/scripts/project-explorer");
+  await import("../src/app/pages/public/projects/scripts/project-explorer");
   const search = document.querySelector<HTMLInputElement>("#project-query")!;
   search.value = "Nuevo";
   await vi.advanceTimersByTimeAsync(30_000);

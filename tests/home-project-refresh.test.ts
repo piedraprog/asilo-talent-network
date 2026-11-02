@@ -5,7 +5,7 @@ import { afterEach, expect, it, vi } from "vitest";
 afterEach(() => { vi.unstubAllGlobals(); });
 it("updates homepage cards after approval, retains them on failure, and respects keyboard focus", async () => {
   document.body.innerHTML = '<div id="project-directory-list"></div>';
-  const source = readFileSync("src/components/ProjectDirectory.astro", "utf8");
+  const source = readFileSync("src/app/pages/public/projects/components/ProjectDirectory.astro", "utf8");
   const refreshCode = source.slice(source.indexOf('  const projectCarousel ='), source.indexOf('  const showProjectPage ='));
   const javascript = ts.transpileModule(refreshCode + '\nreturn refreshProjects;', { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } }).outputText;
   const refresh = new Function("startProjectRefresh", javascript)(() => {}) as () => Promise<void>;

@@ -1,7 +1,7 @@
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import { describe, expect, it, vi } from "vitest";
 import { CATEGORIES } from "../src/app/core/projects-schema";
-import ProjectDirectory from "../src/components/ProjectDirectory.astro";
+import ProjectDirectory from "../src/app/pages/public/projects/components/ProjectDirectory.astro";
 
 vi.mock("../src/app/core/projects-loader", () => ({
   loadApprovedProjects: async () => [

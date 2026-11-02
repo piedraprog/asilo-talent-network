@@ -15,7 +15,7 @@ update this file.
   - `src/app/shared/styles/global.css` — tokens + every component (the real source of truth)
   - `src/app/shared/styles/fonts.css` — `@font-face` for Doto + IBM Plex Sans
   - `src/pages/index.astro` — page composition
-  - `src/components/ProjectDirectory.astro` — Proyectos list + the modal form
+  - `src/app/pages/public/projects/components/ProjectDirectory.astro` — Proyectos list + the modal form
   - `src/scripts/` — `ascii-background.js`, `ascii-cursor.js`, `scroll-reveal.js`
 
 ---
