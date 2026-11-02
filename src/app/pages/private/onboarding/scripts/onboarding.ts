@@ -1,11 +1,11 @@
-import { emptyDraft } from "../app/core/accounts/store";
-import { PROJECT_ROLES, type OnboardingProgress, type Project, type ProjectDraft, type ProjectRole } from "../app/core/accounts/types";
+import { emptyDraft } from "../../../../core/accounts/store";
+import { PROJECT_ROLES, type OnboardingProgress, type Project, type ProjectDraft, type ProjectRole } from "../../../../core/accounts/types";
 import {
   validateProfile, validateProjectDetails, validateProjectInfo,
-} from "../app/core/accounts/validation";
+} from "../../../../core/accounts/validation";
 import {
   WHATSAPP_GROUP_URL, avatarHtml, clearErrors, esc, readLogo, safeReturn, setFieldError, store, withReturn,
-} from "../app/shared/scripts/accounts-client";
+} from "../../../../shared/scripts/accounts-client";
 
 type Step = OnboardingProgress["step"] | "done" | "member";
 const PROJECT_STEPS: Step[] = ["info", "details", "founders", "review"];

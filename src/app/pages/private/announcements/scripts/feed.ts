@@ -1,7 +1,7 @@
-import { FEED_PAGE_SIZE, POST_MAX } from "../app/core/accounts/types";
-import { avatarHtml, clearErrors, esc, readImage, requireSession, setFieldError, store, toast } from "../app/shared/scripts/accounts-client";
+import { FEED_PAGE_SIZE, POST_MAX } from "../../../../core/accounts/types";
+import { avatarHtml, clearErrors, esc, readImage, requireSession, setFieldError, store, toast } from "../../../../shared/scripts/accounts-client";
 import { bindPosts, postHtml, previewHtml } from "./feed-ui";
-import { previewFor } from "../app/core/accounts/link-preview";
+import { previewFor } from "../../../../core/accounts/link-preview";
 
 const me = requireSession();
 const root = document.querySelector<HTMLElement>("[data-feed]")!;

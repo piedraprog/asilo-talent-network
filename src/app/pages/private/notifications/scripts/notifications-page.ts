@@ -1,6 +1,6 @@
-import { REACTIONS } from "../app/core/accounts/types";
-import { timeAgo } from "../app/core/accounts/format";
-import { esc, requireSession, store, syncAuthHint } from "../app/shared/scripts/accounts-client";
+import { REACTIONS } from "../../../../core/accounts/types";
+import { timeAgo } from "../../../../core/accounts/format";
+import { esc, requireSession, store, syncAuthHint } from "../../../../shared/scripts/accounts-client";
 
 const me = requireSession();
 const root = document.querySelector<HTMLElement>("[data-notifications]")!;

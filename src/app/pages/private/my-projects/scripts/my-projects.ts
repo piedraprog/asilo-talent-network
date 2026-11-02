@@ -1,5 +1,5 @@
-import type { Project, ProjectStatus } from "../app/core/accounts/types";
-import { ROLE_LABEL, WHATSAPP_GROUP_URL, avatarHtml, esc, logoHtml, showGate, store } from "../app/shared/scripts/accounts-client";
+import type { Project, ProjectStatus } from "../../../../core/accounts/types";
+import { ROLE_LABEL, WHATSAPP_GROUP_URL, avatarHtml, esc, logoHtml, showGate, store } from "../../../../shared/scripts/accounts-client";
 
 const root = document.querySelector<HTMLElement>("[data-my-projects]")!;
 const me = store.currentAccount();
