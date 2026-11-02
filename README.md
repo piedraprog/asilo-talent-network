@@ -8,12 +8,12 @@ Browse projects at `/proyectos` or apply to join the community from the homepage
 
 ## Development
 
-Requires Node.js >=22.12.0 and pnpm (the version is pinned in `package.json`).
+Requires Node.js >=22.12.0 and bun (the version is pinned in `package.json`).
 
 ```sh
-pnpm install --frozen-lockfile
+bun install --frozen-lockfile
 cp .env.example .env.local
-pnpm dev
+bun run dev
 ```
 
 Open the local URL printed by Astro. Fill in `.env.local` to use the Google
@@ -28,9 +28,9 @@ and `TURNSTILE_SECRET_KEY`. These optional keys are included in `.env.example`.
 ## Checks
 
 ```sh
-pnpm test
-pnpm check
-pnpm build
+bun run test
+bun run check
+bun run build
 ```
 
 ## Issues and pull requests

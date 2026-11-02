@@ -58,8 +58,8 @@ describe("public shell", () => {
     expect(html).not.toContain("↗");
   });
 
-  it("declares the canonical pnpm toolchain and pinned Node types", () => {
-    expect(packageJson.packageManager).toBe("pnpm@11.15.1");
+  it("declares the canonical bun toolchain and pinned Node types", () => {
+    expect(packageJson.packageManager).toBe("bun@1.3.14");
     expect(packageJson.devDependencies["@types/node"]).toBe("26.4.0");
   });
 

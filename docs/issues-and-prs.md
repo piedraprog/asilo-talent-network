@@ -17,8 +17,8 @@ On GitHub, choose **Issues → New issue** and select **Bug report** or
 ## Create a PR
 
 1. Create a branch for one change, such as `fix/project-category-filter`.
-2. Implement and review the diff. For code, run `pnpm test`, `pnpm check`, and
-   `pnpm build`; for docs only, check links and run `git diff --check`.
+2. Implement and review the diff. For code, run `bun run test`, `bun run check`, and
+   `bun run build`; for docs only, check links and run `git diff --check`.
 3. Commit and push the branch, then use **Compare & pull request** on GitHub.
 4. Use a title such as `fix(projects): preserve category when searching` or
    `docs: clarify local setup`. Fill in the PR template with what changed, why,

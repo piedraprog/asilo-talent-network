@@ -1,7 +1,7 @@
 # Asilo Builders
 
 Spanish-language community site and project directory for Venezuelan builders.
-Astro SSR with the Vercel adapter, TypeScript, plain CSS, and pnpm.
+Astro SSR with the Vercel adapter, TypeScript, plain CSS, and bun.
 
 ## Working here
 
@@ -17,7 +17,7 @@ Astro SSR with the Vercel adapter, TypeScript, plain CSS, and pnpm.
 
 ## Verification
 
-- For code changes, run `pnpm test`, `pnpm check`, and `pnpm build`.
+- For code changes, run `bun run test`, `bun run check`, and `bun run build`.
 - Add focused tests for changed behavior. For UI, check the affected flow on
   mobile and desktop, including keyboard use and relevant error states.
 - For documentation-only changes, check links and `git diff --check`.
