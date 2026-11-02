@@ -6,6 +6,8 @@ Astro SSR with the Vercel adapter, TypeScript, plain CSS, and bun.
 ## Working here
 
 - Read [README.md](README.md) for setup and the repository map.
+- Folder layout: [docs/architecture-folders.md](docs/architecture-folders.md)
+  (`app/core`, `app/pages/{public,private}`, `app/shared`; thin `src/pages` shells).
 - Keep changes small and focused. Follow existing components and helpers.
 - Keep user-facing copy in Spanish. For UI changes, read
   [the design system](docs/DESIGN-SYSTEM.md) and reuse existing styles.

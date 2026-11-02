@@ -41,13 +41,13 @@ cover bug reports, improvements, and PRs. Coding agents should start with
 
 ## Structure
 
-- `src/pages/` — home page, project directory, and API routes
-- `src/components/` — shared header, footer, project cards, and submission form
-- `src/lib/` — project loading, validation, search, and submission helpers
-- `src/data/` — project types and fallback data
-- `src/scripts/` and `src/styles/` — browser interactions and styles
+- `src/app/core/` — business logic (loaders, validation, stores, models)
+- `src/app/pages/{public,private}/` — page UI by feature (auth, proyectos, anuncios…)
+- `src/app/shared/` — layouts, shell components, styles, and scripts used by 2+ features
+- `src/pages/` — thin Astro route shells and `api/` endpoints (define URLs)
 - `public/` — images, category icons, fonts, and SVG source artwork used by the site
 - `tests/` — automated tests
+- [Folder architecture](docs/architecture-folders.md) — core / pages / shared rules
 - [Design system](docs/DESIGN-SYSTEM.md) — visual and interaction guidance
 - [Membership form](docs/community-form.md) — spreadsheet setup and limitations
 
