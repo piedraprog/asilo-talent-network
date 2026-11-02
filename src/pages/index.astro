@@ -1,13 +1,13 @@
 ---
-import "../styles/fonts.css";
-import "../styles/global.css";
-import "../styles/motion.css";
-import SiteHeader from "../components/SiteHeader.astro";
-import SiteFooter from "../components/SiteFooter.astro";
-import SeoHead from "../components/SeoHead.astro";
-import ThemeInit from "../components/ThemeInit.astro";
+import "../app/shared/styles/fonts.css";
+import "../app/shared/styles/global.css";
+import "../app/shared/styles/motion.css";
+import SiteHeader from "../app/shared/components/SiteHeader.astro";
+import SiteFooter from "../app/shared/components/SiteFooter.astro";
+import SeoHead from "../app/shared/components/SeoHead.astro";
+import ThemeInit from "../app/shared/components/ThemeInit.astro";
 import ProjectDirectory from "../components/ProjectDirectory.astro";
-import LandingCtas from "../components/LandingCtas.astro";
+import LandingCtas from "../app/shared/components/LandingCtas.astro";
 import { loadApprovedProjects } from "../app/core/projects-loader";
 
 import { loadBuildersCount } from "../app/core/builders-loader";
@@ -84,9 +84,9 @@ const pageDescription =
     </main>
     <SiteFooter home />
     <script>
-      import { initAsciiCursor } from "../scripts/ascii-cursor.js";
+      import { initAsciiCursor } from "../app/shared/scripts/ascii-cursor.js";
       initAsciiCursor();
-      import "../scripts/scroll-reveal.js";
+      import "../app/shared/scripts/scroll-reveal.js";
     </script>
   </body>
 </html>

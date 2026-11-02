@@ -1,8 +1,8 @@
 import { Window } from "happy-dom";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
-import CommunityForm from "../src/components/CommunityForm.astro";
-import { initCommunityForm } from "../src/scripts/community-form";
+import CommunityForm from "../src/app/shared/components/CommunityForm.astro";
+import { initCommunityForm } from "../src/app/shared/scripts/community-form";
 
 const answers = { email: "ana@example.com", name: "Ana Pérez", location: "Caracas, Venezuela", whatsapp: "+58 412 1234567", linkedin: "https://www.linkedin.com/in/ana", role: "Developer", project: "Mi proyecto", description: "Una aplicación." };
 let form: HTMLFormElement;

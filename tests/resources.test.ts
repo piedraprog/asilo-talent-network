@@ -68,7 +68,7 @@ describe("/recursos page", () => {
     const html = await renderResources();
     expect(html).toMatch(/<div class="library-empty" id="resource-empty" hidden>/);
 
-    const css = readFileSync(new URL("../src/styles/recursos.css", import.meta.url), "utf8");
+    const css = readFileSync(new URL("../src/app/shared/styles/recursos.css", import.meta.url), "utf8");
     expect(css).toMatch(/\.resources-page \[hidden\]\s*\{\s*display:\s*none !important;/);
   });
 

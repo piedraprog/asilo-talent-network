@@ -65,7 +65,7 @@ describe("ProjectDirectory", () => {
 
   it("keeps hidden carousel pages out of the flex layout", () => {
     const styles = readFileSync(
-      new URL("../src/styles/global.css", import.meta.url),
+      new URL("../src/app/shared/styles/global.css", import.meta.url),
       "utf8",
     );
 

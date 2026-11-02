@@ -1,6 +1,6 @@
-import { createDialogMotion } from "../app/core/dialog-motion";
-import { createSubmissionClock } from "../app/core/project-form-client";
-import { communitySchema } from "../app/core/community-submit";
+import { createDialogMotion } from "../../core/dialog-motion";
+import { createSubmissionClock } from "../../core/project-form-client";
+import { communitySchema } from "../../core/community-submit";
 
 export function initCommunityForm() {
   const dialog = document.querySelector<HTMLDialogElement>("#community-dialog")!;

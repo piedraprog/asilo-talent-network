@@ -1,5 +1,5 @@
 import type { AccountRole, ContactKey } from "../app/core/accounts/types";
-import { avatarHtml, clearErrors, readLogo, setFieldError, showGate, store } from "./accounts-client";
+import { avatarHtml, clearErrors, readLogo, setFieldError, showGate, store } from "../app/shared/scripts/accounts-client";
 
 const root = document.querySelector<HTMLElement>("[data-profile]")!;
 const me = store.currentAccount();

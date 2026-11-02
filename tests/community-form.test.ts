@@ -1,6 +1,6 @@
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import { describe, expect, it } from "vitest";
-import CommunityForm from "../src/components/CommunityForm.astro";
+import CommunityForm from "../src/app/shared/components/CommunityForm.astro";
 
 describe("membership form markup", () => {
   it("uses POST as its native fallback and a server-rendered fill timestamp", async () => {

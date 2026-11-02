@@ -12,8 +12,8 @@ update this file.
   plain CSS with custom‑property tokens. **No CSS framework, no UI/animation
   libraries.** Prefer native elements (`<dialog>`, form validation) over deps.
 - **Canonical files:**
-  - `src/styles/global.css` — tokens + every component (the real source of truth)
-  - `src/styles/fonts.css` — `@font-face` for Doto + IBM Plex Sans
+  - `src/app/shared/styles/global.css` — tokens + every component (the real source of truth)
+  - `src/app/shared/styles/fonts.css` — `@font-face` for Doto + IBM Plex Sans
   - `src/pages/index.astro` — page composition
   - `src/components/ProjectDirectory.astro` — Proyectos list + the modal form
   - `src/scripts/` — `ascii-background.js`, `ascii-cursor.js`, `scroll-reveal.js`
@@ -221,7 +221,7 @@ Supports a “max N selected” rule by disabling unchecked inputs (JS).
 
 All optional, all reduced‑motion aware, all paused when off‑screen where relevant.
 
-### Scroll reveal — `src/scripts/scroll-reveal.js`
+### Scroll reveal — `src/app/shared/scripts/scroll-reveal.js`
 One `IntersectionObserver`, two reusable hooks, each element fires **once**.
 
 - **Decode heading** — add `data-decode` to a heading. It scrambles ASCII‑ramp
@@ -240,7 +240,7 @@ Safety: the hidden start‑state only applies under `html.js` (JS adds it), so
 content shows without JS; `prefers-reduced-motion` shows everything instantly.
 CSS lives at the bottom of `global.css` (`.js [data-reveal] …`).
 
-### ASCII background — `src/scripts/ascii-background.js`
+### ASCII background — `src/app/shared/scripts/ascii-background.js`
 Renders an image as animated ASCII on a canvas. Generalized to boot on **any**
 `<canvas data-ascii-src="/img.png">`, so the hero and any section can each have
 their own image with one engine.
@@ -253,7 +253,7 @@ Pair a background canvas with a **veil** (`::after` gradient) so overlaid text
 stays readable, and content on top via `z-index`. Instances pause off‑screen via
 `IntersectionObserver`; honors reduced‑motion. Accent glyph color = `--blue-500`.
 
-### Cursor trail — `src/scripts/ascii-cursor.js`
+### Cursor trail — `src/app/shared/scripts/ascii-cursor.js`
 A page‑wide wake of flickering glyphs following the pointer. Disabled on
 touch/coarse pointers and under reduced‑motion; idle cost is zero.
 

@@ -5,7 +5,7 @@ import {
 } from "../app/core/accounts/validation";
 import {
   WHATSAPP_GROUP_URL, avatarHtml, clearErrors, esc, readLogo, safeReturn, setFieldError, store, withReturn,
-} from "./accounts-client";
+} from "../app/shared/scripts/accounts-client";
 
 type Step = OnboardingProgress["step"] | "done" | "member";
 const PROJECT_STEPS: Step[] = ["info", "details", "founders", "review"];

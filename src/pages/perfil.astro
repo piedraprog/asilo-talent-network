@@ -1,6 +1,6 @@
 ---
-import MemberLayout from "../layouts/MemberLayout.astro";
-import AuthGate from "../components/accounts/AuthGate.astro";
+import MemberLayout from "../app/shared/layouts/MemberLayout.astro";
+import AuthGate from "../app/shared/components/accounts/AuthGate.astro";
 import { ACCOUNT_ROLES, PROMO_BLOG } from "../app/core/accounts/types";
 const contactFields = [
   { key: "phone", label: "Teléfono o WhatsApp", type: "tel", placeholder: "+58 412 1234567" },

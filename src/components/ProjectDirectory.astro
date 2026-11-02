@@ -192,7 +192,7 @@ const TURNSTILE_SITE_KEY = import.meta.env.TURNSTILE_SITE_KEY;
   import { MAX_CATEGORIES, SUBMISSION_FIELDS, validateSubmissionForm } from "../app/core/projects-schema";
   import { validateLogo, validateRequiredLogo } from "../app/core/projects-logo";
   import { createSubmissionClock, resetCaptchaWidget } from "../app/core/project-form-client";
-  import { track } from "../scripts/analytics";
+  import { track } from "../app/shared/scripts/analytics";
 
   const projectCarousel = document.getElementById("project-directory-list");
   let projectPages = Array.from(document.querySelectorAll<HTMLElement>("[data-project-page]"));

@@ -1,5 +1,5 @@
 import { timeAgo } from "../app/core/accounts/format";
-import { esc, requireSession, store, toast } from "./accounts-client";
+import { esc, requireSession, store, toast } from "../app/shared/scripts/accounts-client";
 import { postHtml } from "./feed-ui";
 
 const me = requireSession();

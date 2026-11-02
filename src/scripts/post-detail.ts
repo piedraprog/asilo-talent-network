@@ -1,6 +1,6 @@
 import { COMMENT_MAX } from "../app/core/accounts/types";
 import { timeAgo } from "../app/core/accounts/format";
-import { avatarHtml, clearErrors, esc, requireSession, setFieldError, store, toast } from "./accounts-client";
+import { avatarHtml, clearErrors, esc, requireSession, setFieldError, store, toast } from "../app/shared/scripts/accounts-client";
 import { bindPosts, postHtml } from "./feed-ui";
 
 const me = requireSession();

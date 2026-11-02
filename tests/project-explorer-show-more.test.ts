@@ -1,6 +1,6 @@
 // @vitest-environment happy-dom
 import { afterEach, expect, it, vi } from "vitest";
-vi.mock("../src/scripts/analytics", () => ({ track: vi.fn() }));
+vi.mock("../src/app/shared/scripts/analytics", () => ({ track: vi.fn() }));
 vi.mock("../src/app/core/project-refresh", () => ({ startProjectRefresh: vi.fn() }));
 afterEach(() => { vi.restoreAllMocks(); });
 

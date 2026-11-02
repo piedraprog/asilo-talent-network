@@ -1,5 +1,5 @@
 import { FEED_PAGE_SIZE, POST_MAX } from "../app/core/accounts/types";
-import { avatarHtml, clearErrors, esc, readImage, requireSession, setFieldError, store, toast } from "./accounts-client";
+import { avatarHtml, clearErrors, esc, readImage, requireSession, setFieldError, store, toast } from "../app/shared/scripts/accounts-client";
 import { bindPosts, postHtml, previewHtml } from "./feed-ui";
 import { previewFor } from "../app/core/accounts/link-preview";
 

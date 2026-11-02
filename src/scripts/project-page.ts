@@ -1,4 +1,4 @@
-import { ROLE_LABEL, avatarHtml, esc, logoHtml, store } from "./accounts-client";
+import { ROLE_LABEL, avatarHtml, esc, logoHtml, store } from "../app/shared/scripts/accounts-client";
 
 const root = document.querySelector<HTMLElement>("[data-project-page]")!;
 const body = root.querySelector<HTMLElement>("[data-body]")!;
