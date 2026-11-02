@@ -131,7 +131,7 @@ describe("Proyectos directory (slice 1b-b)", () => {
 
 describe("CTA heading", () => {
   it("keeps decode text plain and lets mobile CSS control its two-line wrap", () => {
-    const page = readFileSync(new URL("../src/pages/index.astro", import.meta.url), "utf8");
+    const page = readFileSync(new URL("../src/app/pages/public/home/home.page.astro", import.meta.url), "utf8");
     const styles = readFileSync(new URL("../src/app/shared/styles/global.css", import.meta.url), "utf8");
 
     expect(page).toContain('data-decode>Deja de construir solo</h2>');

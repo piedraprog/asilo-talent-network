@@ -1,4 +1,4 @@
-import { ROLE_LABEL, avatarHtml, esc, logoHtml, showGate, store } from "../app/shared/scripts/accounts-client";
+import { ROLE_LABEL, avatarHtml, esc, logoHtml, showGate, store } from "../../../../shared/scripts/accounts-client";
 
 const root = document.querySelector<HTMLElement>("[data-founder-profile]")!;
 const body = root.querySelector<HTMLElement>("[data-body]")!;

@@ -1,4 +1,4 @@
-import { clearErrors, returnTarget, safeReturn, setFieldError, store, withReturn } from "../app/shared/scripts/accounts-client";
+import { clearErrors, returnTarget, safeReturn, setFieldError, store, withReturn } from "../../../../shared/scripts/accounts-client";
 
 const params = new URLSearchParams(location.search);
 const back = params.get("volver");
