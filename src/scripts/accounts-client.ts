@@ -1,5 +1,5 @@
 /** Browser glue shared by the account screens (mock store on localStorage). */
-import { AccountsStore, memoryStorage, type StorageLike } from "../lib/accounts/store";
+import { AccountsStore, memoryStorage, type StorageLike } from "../app/core/accounts/store";
 
 function browserStorage(): StorageLike {
   try {

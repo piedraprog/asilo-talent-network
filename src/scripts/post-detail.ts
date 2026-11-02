@@ -1,5 +1,5 @@
-import { COMMENT_MAX } from "../lib/accounts/types";
-import { timeAgo } from "../lib/accounts/format";
+import { COMMENT_MAX } from "../app/core/accounts/types";
+import { timeAgo } from "../app/core/accounts/format";
 import { avatarHtml, clearErrors, esc, requireSession, setFieldError, store, toast } from "./accounts-client";
 import { bindPosts, postHtml } from "./feed-ui";
 

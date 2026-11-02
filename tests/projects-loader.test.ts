@@ -1,4 +1,4 @@
-import { projects as placeholderProjects } from "../src/data/projects";
+import { projects as placeholderProjects } from "../src/app/core/models/projects";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   loadApprovedProjects,
@@ -6,7 +6,7 @@ import {
   parseSheetDate,
   resetProjectsCache,
   TTL_MS,
-} from "../src/lib/projects-loader";
+} from "../src/app/core/projects-loader";
 
 // Canonical sheet layout: Nombre del proyecto | Website URL | Descripcion corta
 // | Fundadores | Categorias | Aprobado.

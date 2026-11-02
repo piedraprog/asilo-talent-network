@@ -1,5 +1,5 @@
 /** "Promociones" block of the profile: request and (mock) pay for a note on the Asilo Digital blog. */
-import { PROMO_BLOG, type PromotionOrder } from "../lib/accounts/types";
+import { PROMO_BLOG, type PromotionOrder } from "../app/core/accounts/types";
 import { clearErrors, esc, setFieldError, store, toast } from "./accounts-client";
 
 const root = document.querySelector<HTMLElement>("[data-promotions]");

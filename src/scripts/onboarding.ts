@@ -1,8 +1,8 @@
-import { emptyDraft } from "../lib/accounts/store";
-import { PROJECT_ROLES, type OnboardingProgress, type Project, type ProjectDraft, type ProjectRole } from "../lib/accounts/types";
+import { emptyDraft } from "../app/core/accounts/store";
+import { PROJECT_ROLES, type OnboardingProgress, type Project, type ProjectDraft, type ProjectRole } from "../app/core/accounts/types";
 import {
   validateProfile, validateProjectDetails, validateProjectInfo,
-} from "../lib/accounts/validation";
+} from "../app/core/accounts/validation";
 import {
   WHATSAPP_GROUP_URL, avatarHtml, clearErrors, esc, readLogo, safeReturn, setFieldError, store, withReturn,
 } from "./accounts-client";

@@ -1,7 +1,7 @@
 import type { APIContext } from "astro";
 import googleSheets from "@googleapis/sheets";
-import { readSubmissionForm } from "../../../lib/submission-body";
-import { communityRow, communitySchema, isCommunityHeaderRow } from "../../../lib/community-submit";
+import { readSubmissionForm } from "../../../app/core/submission-body";
+import { communityRow, communitySchema, isCommunityHeaderRow } from "../../../app/core/community-submit";
 export const prerender = false;
 const hits = new Map<string, number[]>();
 const reply = (body: object, status: number) => new Response(JSON.stringify(body), { status, headers: { "Content-Type": "application/json", "Cache-Control": "no-store" } });

@@ -8,9 +8,9 @@ import SiteFooter from "../components/SiteFooter.astro";
 import SeoHead from "../components/SeoHead.astro";
 import ThemeInit from "../components/ThemeInit.astro";
 import ProjectDirectory from "../components/ProjectDirectory.astro";
-import { loadApprovedProjects } from "../lib/projects-loader";
+import { loadApprovedProjects } from "../app/core/projects-loader";
 import ProjectCard from "../components/ProjectCard.astro";
-import { filterProjects, normalizeSearch, limitProjects, parseProjectOrder, showMoreUrl, PROJECTS_PAGE_SIZE } from "../lib/project-search";
+import { filterProjects, normalizeSearch, limitProjects, parseProjectOrder, showMoreUrl, PROJECTS_PAGE_SIZE } from "../app/core/project-search";
 
 const projects = (await loadApprovedProjects()).map((project, index) => ({ ...project, index }));
 const categories = Array.from(new Map(projects.flatMap(project => project.tags)

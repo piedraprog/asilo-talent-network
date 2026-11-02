@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import { describe, expect, it } from "vitest";
 import ProjectDirectory from "../src/components/ProjectDirectory.astro";
-import type { Project } from "../src/data/projects";
+import type { Project } from "../src/app/core/models/projects";
 
 describe("ProjectDirectory", () => {
   it("shows ten projects per carousel page in two five-card columns", async () => {

@@ -7,7 +7,7 @@
  *
  * The site stays runnable without credentials: when configuration is absent,
  * or the first Sheets fetch fails, this module falls back to the static
- * placeholder grid from `../data/projects`. A successful read always wins: a
+ * placeholder grid from `./models/projects`. A successful read always wins: a
  * correctly structured sheet with zero approved rows yields an empty list.
  * A short module-level TTL cache with stale-on-error behavior keeps reads
  * within the service-account quota (~60 reads/minute).
@@ -30,7 +30,7 @@ import googleSheets from "@googleapis/sheets";
 import {
   projects as placeholderProjects,
   type Project,
-} from "../data/projects";
+} from "./models/projects";
 import { LOGO_BUCKET_ID } from "./projects-logo";
 import { projectIconUrl } from "./project-icons";
 

@@ -1,7 +1,7 @@
 // @vitest-environment happy-dom
 import { afterEach, expect, it, vi } from "vitest";
 vi.mock("../src/scripts/analytics", () => ({ track: vi.fn() }));
-vi.mock("../src/lib/project-refresh", () => ({ startProjectRefresh: vi.fn() }));
+vi.mock("../src/app/core/project-refresh", () => ({ startProjectRefresh: vi.fn() }));
 afterEach(() => { vi.restoreAllMocks(); });
 
 it("shows ten first, reveals ten more per press, hides the button at the end and resets on filter change", async () => {

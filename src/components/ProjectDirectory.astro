@@ -1,7 +1,7 @@
 ---
-import type { Project } from "../data/projects";
+import type { Project } from "../app/core/models/projects";
 import ProjectCard from "./ProjectCard.astro";
-import { CATEGORIES, MAX_CATEGORIES } from "../lib/projects-submit";
+import { CATEGORIES, MAX_CATEGORIES } from "../app/core/projects-submit";
 
 interface Props {
   projects: Project[];
@@ -186,12 +186,12 @@ const TURNSTILE_SITE_KEY = import.meta.env.TURNSTILE_SITE_KEY;
 
 <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script>
-  import { startProjectRefresh } from "../lib/project-refresh";
-  import { createDialogMotion } from "../lib/dialog-motion";
+  import { startProjectRefresh } from "../app/core/project-refresh";
+  import { createDialogMotion } from "../app/core/dialog-motion";
   import { gsap } from "gsap";
-  import { MAX_CATEGORIES, SUBMISSION_FIELDS, validateSubmissionForm } from "../lib/projects-schema";
-  import { validateLogo, validateRequiredLogo } from "../lib/projects-logo";
-  import { createSubmissionClock, resetCaptchaWidget } from "../lib/project-form-client";
+  import { MAX_CATEGORIES, SUBMISSION_FIELDS, validateSubmissionForm } from "../app/core/projects-schema";
+  import { validateLogo, validateRequiredLogo } from "../app/core/projects-logo";
+  import { createSubmissionClock, resetCaptchaWidget } from "../app/core/project-form-client";
   import { track } from "../scripts/analytics";
 
   const projectCarousel = document.getElementById("project-directory-list");

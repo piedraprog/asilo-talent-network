@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { filterProjects, limitProjects, normalizeVisibleLimit, parseProjectOrder, showMoreUrl } from "../src/lib/project-search";
-import type { Project } from "../src/data/projects";
+import { filterProjects, limitProjects, normalizeVisibleLimit, parseProjectOrder, showMoreUrl } from "../src/app/core/project-search";
+import type { Project } from "../src/app/core/models/projects";
 const projects: Project[] = [
   { title: "Zeta", author: "María Pérez", description: "Pagos para equipos", tags: ["Fintech"], href: "https://example.com/z" },
   { title: "Ávila", author: "Luis", description: "Diseño con inteligencia artificial", tags: ["AI", "Diseño"], href: "https://example.com/a" },

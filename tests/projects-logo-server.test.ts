@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import sharp from "sharp";
-import { prepareLogo } from "../src/lib/projects-logo-server";
-import { validateLogo } from "../src/lib/projects-logo";
+import { prepareLogo } from "../src/app/core/projects-logo-server";
+import { validateLogo } from "../src/app/core/projects-logo";
 
 const image = () => sharp({ create: { width: 8, height: 8, channels: 4, background: "red" } });
 const file = (buffer: Buffer, name = "logo.png", type = "image/png") => new File([new Uint8Array(buffer)], name, { type });

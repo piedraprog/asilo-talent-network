@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it } from "vitest";
-import { AccountsStore, MOCK_CODE, emptyDraft, memoryStorage } from "../src/lib/accounts/store";
-import { slugify, uniqueSlug } from "../src/lib/accounts/slug";
-import type { ProjectDraft } from "../src/lib/accounts/types";
+import { AccountsStore, MOCK_CODE, emptyDraft, memoryStorage } from "../src/app/core/accounts/store";
+import { slugify, uniqueSlug } from "../src/app/core/accounts/slug";
+import type { ProjectDraft } from "../src/app/core/accounts/types";
 
 const draft = (over: Partial<ProjectDraft> = {}): ProjectDraft => ({
   ...emptyDraft(), name: "Mi Proyecto", website: "miproyecto.com", short: "Una frase que describe el proyecto.",

@@ -1,4 +1,4 @@
-import type { AccountRole, ContactKey } from "../lib/accounts/types";
+import type { AccountRole, ContactKey } from "../app/core/accounts/types";
 import { avatarHtml, clearErrors, readLogo, setFieldError, showGate, store } from "./accounts-client";
 
 const root = document.querySelector<HTMLElement>("[data-profile]")!;

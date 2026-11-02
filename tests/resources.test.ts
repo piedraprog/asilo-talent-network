@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import { describe, expect, it } from "vitest";
-import { resourceCategories } from "../src/data/resources";
+import { resourceCategories } from "../src/app/core/models/resources";
 import ResourcesPage from "../src/pages/recursos.astro";
 
 const VALID_TAGS = new Set(["free", "freemium", "paid", "open-source", ""]);

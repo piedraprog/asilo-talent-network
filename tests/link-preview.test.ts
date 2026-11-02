@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { firstUrl, mockPreview, segments } from "../src/lib/accounts/link-preview";
+import { firstUrl, mockPreview, segments } from "../src/app/core/accounts/link-preview";
 
 describe("link detection", () => {
   it("finds http, www and bare domains, trimming trailing punctuation", () => {

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { projectIconUrl } from "../src/lib/project-icons";
+import { projectIconUrl } from "../src/app/core/project-icons";
 
 describe("projectIconUrl", () => {
   it("uses the first category and falls back to the neutral box", () => {

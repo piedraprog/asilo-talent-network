@@ -5,7 +5,7 @@ import {
   validateLogo,
   validateRequiredLogo,
   LOGO_REQUIRED_MESSAGE,
-} from "../src/lib/projects-logo";
+} from "../src/app/core/projects-logo";
 
 describe("logoFileExtension", () => {
   it("returns the lowercased extension without the dot", () => {

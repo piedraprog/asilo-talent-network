@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it } from "vitest";
-import { AccountsStore, MOCK_CODE, emptyDraft, memoryStorage } from "../src/lib/accounts/store";
-import { timeAgo } from "../src/lib/accounts/format";
-import { POST_MAX } from "../src/lib/accounts/types";
+import { AccountsStore, MOCK_CODE, emptyDraft, memoryStorage } from "../src/app/core/accounts/store";
+import { timeAgo } from "../src/app/core/accounts/format";
+import { POST_MAX } from "../src/app/core/accounts/types";
 
 /** Signs in as Lucía (seed founder of Pana Pay) by creating a matching session. */
 function asFounder(store: AccountsStore) {

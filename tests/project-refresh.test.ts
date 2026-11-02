@@ -1,6 +1,6 @@
 // @vitest-environment happy-dom
 import { afterEach, expect, it, vi } from "vitest";
-import { startProjectRefresh } from "../src/lib/project-refresh";
+import { startProjectRefresh } from "../src/app/core/project-refresh";
 let stop: (() => void) | undefined;
 afterEach(() => { stop?.(); vi.useRealTimers(); vi.restoreAllMocks(); });
 it("coalesces slow requests, ignores tab-switch bursts and pauses hidden tabs", async () => {

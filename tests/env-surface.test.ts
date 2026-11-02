@@ -12,17 +12,17 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const src = (p: string) => join(__dirname, "..", "src", p);
 
 const SURFACES: Array<{ file: string; envVar: string }> = [
-  { file: "lib/projects-loader.ts", envVar: "GOOGLE_SHEETS_ID" },
-  { file: "lib/projects-loader.ts", envVar: "GOOGLE_SERVICE_ACCOUNT_JSON_BASE64" },
-  { file: "lib/projects-loader.ts", envVar: "GOOGLE_SHEETS_RANGE" },
+  { file: "app/core/projects-loader.ts", envVar: "GOOGLE_SHEETS_ID" },
+  { file: "app/core/projects-loader.ts", envVar: "GOOGLE_SERVICE_ACCOUNT_JSON_BASE64" },
+  { file: "app/core/projects-loader.ts", envVar: "GOOGLE_SHEETS_RANGE" },
   { file: "pages/api/projects/submit.ts", envVar: "GOOGLE_SHEETS_ID" },
   { file: "pages/api/projects/submit.ts", envVar: "GOOGLE_SERVICE_ACCOUNT_JSON_BASE64" },
   { file: "pages/api/projects/submit.ts", envVar: "GOOGLE_SHEETS_RANGE" },
   { file: "pages/api/projects/submit.ts", envVar: "APPWRITE_ENDPOINT" },
   { file: "pages/api/projects/submit.ts", envVar: "APPWRITE_PROJECT_ID" },
   { file: "pages/api/projects/submit.ts", envVar: "APPWRITE_API_KEY" },
-  { file: "lib/turnstile.ts", envVar: "TURNSTILE_SITE_KEY" },
-  { file: "lib/turnstile.ts", envVar: "TURNSTILE_SECRET_KEY" },
+  { file: "app/core/turnstile.ts", envVar: "TURNSTILE_SITE_KEY" },
+  { file: "app/core/turnstile.ts", envVar: "TURNSTILE_SECRET_KEY" },
   { file: "pages/api/projects/submit.ts", envVar: "TURNSTILE_SECRET_KEY" },
   { file: "pages/api/projects/submit.ts", envVar: "DEV_ALLOW_DUPLICATE_WEBSITE" },
 ];

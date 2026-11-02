@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import { describe, expect, it } from "vitest";
-import { projects as placeholderProjects } from "../src/data/projects";
+import { projects as placeholderProjects } from "../src/app/core/models/projects";
 import IndexPage from "../src/pages/index.astro";
 
 const packageJson = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));

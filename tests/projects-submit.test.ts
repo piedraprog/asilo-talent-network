@@ -13,7 +13,7 @@ import {
   validateSubmissionForm,
   websiteColumnIndex,
   type NormalizedSubmission,
-} from "../src/lib/projects-submit";
+} from "../src/app/core/projects-submit";
 
 const validInput = {
   nombre: "Pana Pay",

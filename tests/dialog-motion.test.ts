@@ -1,6 +1,6 @@
 import { Window } from "happy-dom";
 import { afterEach, beforeEach, expect, it, vi } from "vitest";
-import { createDialogMotion } from "../src/lib/dialog-motion";
+import { createDialogMotion } from "../src/app/core/dialog-motion";
 
 let dialog: HTMLDialogElement;
 let opener: HTMLButtonElement;

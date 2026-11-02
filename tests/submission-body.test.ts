@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { MAX_SUBMISSION_BYTES, readSubmissionForm } from "../src/lib/submission-body";
+import { MAX_SUBMISSION_BYTES, readSubmissionForm } from "../src/app/core/submission-body";
 
 describe("bounded submission body", () => {
   it("reads valid multipart data", async () => {

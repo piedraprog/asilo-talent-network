@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { loadApprovedProjects } from "../../../lib/projects-loader";
+import { loadApprovedProjects } from "../../../app/core/projects-loader";
 
 export const prerender = false;
 

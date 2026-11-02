@@ -8,9 +8,9 @@ import SeoHead from "../components/SeoHead.astro";
 import ThemeInit from "../components/ThemeInit.astro";
 import ProjectDirectory from "../components/ProjectDirectory.astro";
 import LandingCtas from "../components/LandingCtas.astro";
-import { loadApprovedProjects } from "../lib/projects-loader";
+import { loadApprovedProjects } from "../app/core/projects-loader";
 
-import { loadBuildersCount } from "../lib/builders-loader";
+import { loadBuildersCount } from "../app/core/builders-loader";
 
 const [projects, buildersCount] = await Promise.all([
   loadApprovedProjects(),

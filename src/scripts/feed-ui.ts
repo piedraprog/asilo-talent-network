@@ -1,8 +1,8 @@
 /** Rendering and actions for feed posts, shared by the feed and the post page. */
-import { timeAgo } from "../lib/accounts/format";
-import { segments, type LinkPreview } from "../lib/accounts/link-preview";
-import type { PostView } from "../lib/accounts/store";
-import { COMMENT_MAX, POST_MAX, REACTIONS } from "../lib/accounts/types";
+import { timeAgo } from "../app/core/accounts/format";
+import { segments, type LinkPreview } from "../app/core/accounts/link-preview";
+import type { PostView } from "../app/core/accounts/store";
+import { COMMENT_MAX, POST_MAX, REACTIONS } from "../app/core/accounts/types";
 import { avatarHtml, clearErrors, esc, logoHtml, readImage, setFieldError, store, toast } from "./accounts-client";
 
 const ICON_COMMENT = `<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 5.5h14a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5h-7l-4.5 3.5V16.5H5A1.5 1.5 0 0 1 3.5 15V7A1.5 1.5 0 0 1 5 5.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" /></svg>`;

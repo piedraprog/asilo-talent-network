@@ -1,4 +1,4 @@
-import type { Project } from "../data/projects";
+import type { Project } from "./models/projects";
 
 export const normalizeSearch = (value: string) => value.normalize("NFD")
   .replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("es").trim();

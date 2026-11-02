@@ -1,5 +1,5 @@
-import { REACTIONS } from "../lib/accounts/types";
-import { timeAgo } from "../lib/accounts/format";
+import { REACTIONS } from "../app/core/accounts/types";
+import { timeAgo } from "../app/core/accounts/format";
 import { esc, requireSession, store, syncAuthHint } from "./accounts-client";
 
 const me = requireSession();

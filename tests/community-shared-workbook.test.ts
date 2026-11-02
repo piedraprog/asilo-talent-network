@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { COMMUNITY_HEADERS } from "../src/lib/community-submit";
+import { COMMUNITY_HEADERS } from "../src/app/core/community-submit";
 
 const { append, get } = vi.hoisted(() => ({ append: vi.fn(), get: vi.fn() }));
 vi.mock("@googleapis/sheets", () => ({

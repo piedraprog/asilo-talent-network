@@ -5,11 +5,11 @@ vi.mock("@googleapis/sheets", () => ({ default: {
   auth: { JWT: class {} },
   sheets: () => ({ spreadsheets: { values: { get: getValues } } }),
 } }));
-vi.mock("../src/lib/builders-loader", () => ({ loadBuildersCount: async () => 180 }));
+vi.mock("../src/app/core/builders-loader", () => ({ loadBuildersCount: async () => 180 }));
 import Home from "../src/pages/index.astro";
 import Directory from "../src/pages/proyectos.astro";
 import { GET } from "../src/pages/api/projects/index";
-import { resetProjectsCache } from "../src/lib/projects-loader";
+import { resetProjectsCache } from "../src/app/core/projects-loader";
 afterEach(() => { resetProjectsCache(); vi.unstubAllEnvs(); vi.restoreAllMocks(); });
 it("reflects a Sheets approval and revocation in both SSR pages and the API after cache expiry", async () => {
   vi.stubEnv("GOOGLE_SHEETS_ID", "test-sheet");

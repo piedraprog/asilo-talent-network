@@ -1,5 +1,5 @@
-import { startProjectRefresh } from "../lib/project-refresh";
-import { DEFAULT_PROJECT_ORDER, filterProjects, limitProjects, normalizeVisibleLimit, parseProjectOrder, PROJECTS_PAGE_SIZE } from "../lib/project-search";
+import { startProjectRefresh } from "../app/core/project-refresh";
+import { DEFAULT_PROJECT_ORDER, filterProjects, limitProjects, normalizeVisibleLimit, parseProjectOrder, PROJECTS_PAGE_SIZE } from "../app/core/project-search";
 import { track } from "./analytics";
 
 const form = document.querySelector<HTMLFormElement>("#project-filters")!;

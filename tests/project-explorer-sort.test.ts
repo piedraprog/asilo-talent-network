@@ -1,7 +1,7 @@
 // @vitest-environment happy-dom
 import { afterEach, expect, it, vi } from "vitest";
 vi.mock("../src/scripts/analytics", () => ({ track: vi.fn() }));
-vi.mock("../src/lib/project-refresh", () => ({ startProjectRefresh: vi.fn() }));
+vi.mock("../src/app/core/project-refresh", () => ({ startProjectRefresh: vi.fn() }));
 afterEach(() => { vi.useRealTimers(); vi.restoreAllMocks(); });
 
 it("reorders results from the order tabs and keeps the default order out of the URL", async () => {

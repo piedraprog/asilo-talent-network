@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { createSubmissionClock, resetCaptchaWidget } from "../src/lib/project-form-client";
+import { createSubmissionClock, resetCaptchaWidget } from "../src/app/core/project-form-client";
 
 describe("submission clock", () => {
   it("uses elapsed monotonic time on the server's clock, including repeated forms", () => {

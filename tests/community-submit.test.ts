@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { COMMUNITY_HEADERS, communitySchema, communityRow } from "../src/lib/community-submit";
+import { COMMUNITY_HEADERS, communitySchema, communityRow } from "../src/app/core/community-submit";
 const { append, get } = vi.hoisted(() => ({ append: vi.fn(), get: vi.fn() }));
 vi.mock("@googleapis/sheets", () => ({ default: { auth: { JWT: class {} }, sheets: () => ({ spreadsheets: { values: { append, get } } }) } }));
 import { POST } from "../src/pages/api/community/submit";

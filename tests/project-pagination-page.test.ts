@@ -1,6 +1,6 @@
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import { describe, expect, it, vi } from "vitest";
-vi.mock("../src/lib/projects-loader", () => ({
+vi.mock("../src/app/core/projects-loader", () => ({
   loadApprovedProjects: async () => Array.from({ length: 25 }, (_, index) => ({
     title: `Project ${String(index + 1).padStart(2, "0")}`,
     href: `https://example.com/${index + 1}`,

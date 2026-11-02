@@ -1,4 +1,4 @@
-import type { Project, ProjectStatus } from "../lib/accounts/types";
+import type { Project, ProjectStatus } from "../app/core/accounts/types";
 import { ROLE_LABEL, WHATSAPP_GROUP_URL, avatarHtml, esc, logoHtml, showGate, store } from "./accounts-client";
 
 const root = document.querySelector<HTMLElement>("[data-my-projects]")!;

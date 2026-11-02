@@ -3,7 +3,7 @@ import {
   TURNSTILE_VERIFY_URL,
   turnstileConfigured,
   verifyTurnstile,
-} from "../src/lib/turnstile";
+} from "../src/app/core/turnstile";
 
 const originalFetch = globalThis.fetch;
 

@@ -1,4 +1,4 @@
-import { timeAgo } from "../lib/accounts/format";
+import { timeAgo } from "../app/core/accounts/format";
 import { esc, requireSession, store, toast } from "./accounts-client";
 import { postHtml } from "./feed-ui";
 

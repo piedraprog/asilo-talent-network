@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { BUILDERS_TTL_MS, countBuilders, FALLBACK_BUILDERS_COUNT, loadBuildersCount, resetBuildersCache } from "../src/lib/builders-loader";
+import { BUILDERS_TTL_MS, countBuilders, FALLBACK_BUILDERS_COUNT, loadBuildersCount, resetBuildersCache } from "../src/app/core/builders-loader";
 
 beforeEach(() => {
   resetBuildersCache();
